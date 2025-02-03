@@ -1,0 +1,141 @@
+:root {
+  --color-trans-blue: #5bcefa;
+  --color-trans-pink: #f5a9b8;
+  --color-rainbow-red: #ff0000;
+  --color-rainbow-orange: #ff9900;
+  --color-rainbow-yellow: #ffff00;
+  --color-rainbow-green: #00ff00;
+  --color-rainbow-blue: #0000ff;
+  --color-rainbow-purple: #9933cc;
+  --color-background: #f7f1e5;
+  --color-text: #333;
+  --color-accent: #6b5b95;
+}
+
+/* Estilos personalizados para la navbar */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    var(--color-rainbow-red),
+    var(--color-rainbow-orange),
+    var(--color-rainbow-yellow),
+    var(--color-rainbow-green),
+    var(--color-rainbow-blue),
+    var(--color-rainbow-purple)
+  );
+  color: black;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: black !important;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  background: linear-gradient(
+    90deg,
+    var(--color-trans-blue),
+    var(--color-trans-pink)
+  );
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Estilizar el formulario de búsqueda */
+.form-control {
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.btn-outline-success {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #ffffff;
+  color: #2c3e50;
+  border-color: #ffffff;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+}
